@@ -517,6 +517,7 @@ button {
 }
 .footer-socials-list {
   gap: 16px;
+  margin-right: 80px;
 }
 .footer-socials-link {
   display: flex;
@@ -534,6 +535,70 @@ button {
 }
 .footer-socials-icon {
   fill: var(--cloud-tx-cl);
+}
+.form-field {
+  color: var(--white-tx-cl);
+  font-size: 16px;
+}
+
+.form-title {
+  margin-bottom: 24px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-form-field {
+  position: relative;
+}
+
+.foooter-form-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  line-height: 2;
+}
+
+.footer-input-form {
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  color: var(--white-tx-cl);
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  border-radius: 4px;
+  padding-left: 52px;
+  outline: none;
+  transition: var(--anim-fast);
+}
+.footer-input-form:hover,
+.footer-input-form:focus {
+  border-color: var(--iris-bg-cl);
+}
+.footer-form-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  background-color: var(--iris-bg-cl);
+  border-radius: 4px;
+  border-color: transparent;
+  transition: var(--anim-fast);
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: var(--ocean-bg-cl);
 }
 /* Modal styles */
 
@@ -673,7 +738,7 @@ button {
   border-color: var(--iris-bg-cl);
 }
 .modal-comment-form::placeholder {
- color: rgba(46, 47, 66, 0.4);;
+  color: rgba(46, 47, 66, 0.4);
 }
 .modal-form-agreement {
   display: flex;
@@ -690,19 +755,15 @@ button {
   border-radius: 2px;
   transition: var(--anim-fast);
   cursor: pointer;
-
-
 }
 .modal-form-agreement-box:checked {
   background-color: var(--ocean-bg-cl);
   border: 1px solid var(--ocean-bg-cl);
-} 
+}
 .modal-form-agreement-text {
   font-size: 12px;
-
 }
 .modal-form-agreement-link {
-
 }
 .modal-form-btn {
   display: block;
@@ -714,10 +775,11 @@ button {
   background-color: var(--iris-bg-cl);
   color: var(--white-tx-cl);
   border-radius: 4px;
+  border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: var(--anim-fast);
-  }
-  .modal-form-btn:hover,
-  .modal-form-btn:focus {
-    background-color: var(--ocean-bg-cl);
-  }
+}
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--ocean-bg-cl);
+}
