@@ -581,7 +581,12 @@
           <form class="footer-form">
             <div class="footer-form-field">
               <label class="foooter-form-label" for="subscribe">E-mail</label>
-              <input class="footer-input-form" type="email" name="subscribe" id="subscribe" />
+              <input
+                class="footer-input-form"
+                type="email"
+                name="subscribe"
+                id="subscribe"
+              />
             </div>
             <button class="footer-form-btn btn" type="submit">
               <span class="btn-title">Subscribe</span>
@@ -655,13 +660,18 @@
             placeholder="Text input"
           ></textarea>
           <label class="modal-form-agreement">
-            <input
-              class="modal-form-agreement-box"
-              type="checkbox"
-              name="comment"
-            /><span class="modal-form-agreement-text"
+            <div class="modal-check-field">
+              <input
+                class="modal-form-agreement-box"
+                type="checkbox"
+                name="comment"
+              /><svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-label-accept"></use>
+              </svg>
+            </div>
+            <span class="modal-form-agreement-text"
               >I accept the terms and conditions of the
-              <a class="modal-form-agreement-link" href=""
+              <a class="modal-form-agreement-link link" href=""
                 >Privacy Policy</a
               ></span
             >

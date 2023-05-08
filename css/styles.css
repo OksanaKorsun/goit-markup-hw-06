@@ -542,7 +542,7 @@ button {
 }
 
 .form-title {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .footer-form {
@@ -561,8 +561,11 @@ button {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  font-family: 'Roboto';
   font-size: 12px;
   line-height: 2;
+  font-weight: 400;
+  letter-spacing: 0.04em;
 }
 
 .footer-input-form {
@@ -574,11 +577,10 @@ button {
   background-color: transparent;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-
   border-radius: 4px;
-  padding-left: 52px;
+  padding-left: 68px;
   outline: none;
-  transition: var(--anim-fast);
+  transition: border-color var(--anim-fast);
 }
 .footer-input-form:hover,
 .footer-input-form:focus {
@@ -589,16 +591,26 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 165px;
+  height: 40px;
   padding: 8px 24px;
   gap: 16px;
   background-color: var(--iris-bg-cl);
   border-radius: 4px;
-  border-color: transparent;
-  transition: var(--anim-fast);
+  /* border-color: transparent; */
+  transition: background-color var(--anim-fast);
 }
 .footer-form-btn:hover,
 .footer-form-btn:focus {
   background-color: var(--ocean-bg-cl);
+}
+.btn-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 /* Modal styles */
 
@@ -672,20 +684,22 @@ button {
 .modal-title {
   display: block;
   font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.5px;
   text-align: center;
   margin-top: 24px;
   margin-bottom: 16px;
 }
-
-.modal-form {
-  /* width: 360px;
-  min-height: 336px; */
-}
-
 .modal-label-form {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
+  font-weight: 400;
+  color: var(--light-slate);
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 .modal-form-field {
   position: relative;
@@ -700,7 +714,7 @@ button {
   border-radius: 4px;
   /* outline: 2px solid transparent;
   outline-offset: -2px; */
-  transition: var(--anim-fast);
+  transition: border-color var(--anim-fast);
   outline: none;
 }
 .modal-input-form:focus {
@@ -715,6 +729,7 @@ button {
   transform: translateY(-50%);
   transition: var(--anim-fast);
   pointer-events: none;
+  transition: fill var(--anim-fast);
 }
 .modal-input-form:focus + .modal-form-icon {
   fill: var(--iris-bg-cl);
@@ -731,7 +746,7 @@ button {
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  transition: var(--anim-fast);
+  transition: border-color var(--anim-fast);
   outline: none;
 }
 .modal-comment-form:focus {
@@ -742,10 +757,13 @@ button {
 }
 .modal-form-agreement {
   display: flex;
-  align-items: center;
-  /* justify-content: flex-start; */
+  flex-direction: row;
+  /* align-items: center; */
   gap: 8px;
   margin-bottom: 24px;
+}
+.modal-check-field {
+  position: relative;
 }
 .modal-form-agreement-box {
   appearance: none;
@@ -753,8 +771,19 @@ button {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: var(--anim-fast);
+  transition: background-color var(--anim-fast), border-color var(--anim-fast);
   cursor: pointer;
+}
+.modal-form-agreement-box:hover,
+.modal-form-agreement-box:focus {
+  border-color: var(--ocean-bg-cl);
+}
+.check-icon {
+  position: absolute;
+  left: 18.75%;
+  right: 18.75%;
+  top: 25%;
+  bottom: 25%;
 }
 .modal-form-agreement-box:checked {
   background-color: var(--ocean-bg-cl);
@@ -763,21 +792,24 @@ button {
 .modal-form-agreement-text {
   font-size: 12px;
 }
-.modal-form-agreement-link {
+.modal-form-agreement-box:checked + .modal-form-agreement {
+  fill: var(--light-bg-cl);
 }
 .modal-form-btn {
   display: block;
   margin: 0 auto;
   width: 169px;
   height: 56px;
-  padding: 16px 32px;
+  padding: 8px 24px;
   font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   background-color: var(--iris-bg-cl);
   color: var(--white-tx-cl);
   border-radius: 4px;
-  border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: var(--anim-fast);
+  transition: background-color var(--anim-fast);
 }
 .modal-form-btn:hover,
 .modal-form-btn:focus {
