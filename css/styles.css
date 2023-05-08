@@ -153,7 +153,7 @@ button {
 .header-link {
   position: relative;
   font-weight: 500;
-  padding: 24px 0;
+  padding: 27px 0;
   color: var(--navy-blue-tx-cl);
   transition: color var(--anim-fast);
 }
@@ -538,10 +538,13 @@ button {
 }
 .form-field {
   color: var(--white-tx-cl);
-  font-size: 16px;
 }
 
 .form-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 
@@ -561,7 +564,7 @@ button {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 12px;
   line-height: 2;
   font-weight: 400;
@@ -605,7 +608,7 @@ button {
   background-color: var(--ocean-bg-cl);
 }
 .btn-title {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -758,7 +761,7 @@ button {
 .modal-form-agreement {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
+  align-items: center; 
   gap: 8px;
   margin-bottom: 24px;
 }
@@ -791,6 +794,10 @@ button {
 }
 .modal-form-agreement-text {
   font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
 }
 .modal-form-agreement-box:checked + .modal-form-agreement {
   fill: var(--light-bg-cl);
